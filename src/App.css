@@ -36,3 +36,143 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-darks {
+  --bs-bg-opacity: 1;
+  background-color: rgb(26 26 43);
+  /* margin: 99px; */
+  margin-right: 503px;
+  margin-left: 467px;
+  border-radius: 25px;
+  margin-top: 36px;
+  /* background-color: #090917; */
+  border: 1px solid rgb(86 80 80);
+}
+
+.img-fluidi {
+  max-width: 98%;
+  height: auto;
+}
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.2rem !important;
+  }
+
+  .menu-active {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+
+#header .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #ffa323;
+  border: 2px solid #ffa323;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: #ffa323;
+  color: #fff;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  max-width: 750px;
+  min-height: 550px;
+  background: rgb(19 26 50);
+}
+.continess {
+  background:rgb(26 26 43);
+  height: 100vh;
+  padding: 0.75rem;
+}
+.icontain {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-around;
+}
+.inputing {
+  padding: 0.75rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  width: 90%;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+  background-color:#131325;
+  color: white;
+}
+
+.cans {
+  cursor: pointer;
+  width: 50px;
+  --tw-bg-opacity: 1;
+  background-color: #dec2c2;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items {
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  /* width: 96%; */
+  margin: 22px;
+  border-bottom-width: 1px;
+  padding: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #262e39;
+  margin-bottom: 10px;
+}
+
+.items1 {
+  padding-right: 0.5rem /* 8px */;
+  font-size: 14px;
+  -tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+
+.tex{
+  font-size: 20px;
+  color: white;
+  padding-left: 27px;
+}
+.text-\[\#e74c3c\] {
+  --tw-text-opacity: 1;
+  color: rgb(231 76 60 / var(--tw-text-opacity));
+}
+.p-3 {
+  padding: 0.75rem/* 12px */;
+}
+
+.containerss{
+  background: #1c2634;
+  color: white;
+}
+
+.head{
+  color: white;
+  text-align: center
+}
+
+.button1{
+
+margin-left: 1171px;
+}

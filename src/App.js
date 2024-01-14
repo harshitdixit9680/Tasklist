@@ -1,24 +1,41 @@
-import logo from './logo.svg';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Login from './Component/Login';
+import Signup from './Component/Signup';
+import Navbar from './Component/Navbar';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import Home from './Component/Home';
+import { useState } from 'react';
+import Alert from './Component/Alert';
+import Tasklist from './Component/Tasklist';
+
 
 function App() {
+  const [alert, setAlert] = useState(null);
+  const showAlert = (message, type)=>{
+    setAlert({
+      msg: message,
+      type: type
+    })
+    setTimeout(() => {
+        setAlert(null);
+    }, 1500);
+}
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+   <Navbar/>
+   <Alert alert={alert}/>
+   <Routes >
+        <Route exact path="/login" element={<Login showAlert = {showAlert}/>} />
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/signup" element={<Signup showAlert = {showAlert}/>} />
+        <Route exact path="/tasklist" element={<Tasklist/>} />
+        {/* <Route exact path="/navbar" element={<Navbar />} /> */}
+        
+      </Routes>
+   
+   </>
   );
 }
 
